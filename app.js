@@ -431,7 +431,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector('.header');
     if (header) {
       if (window.scrollY > 100) {
-        header.style.backgroundColor = 'rgba(252, 252, 249, 0.95)';
         header.style.backdropFilter = 'blur(10px)';
       } else {
         header.style.backgroundColor = 'var(--color-surface)';
