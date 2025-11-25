@@ -5,10 +5,10 @@ const servicesData = {
     name: "Churrasco",
     description: "Carnes nobres grelhadas na brasa",
     menu: {
-      ENTRADAS: ["Picanha grelhada", "Costela defumada", "Linguiça artesanal", "Frango temperado", "Pão de alho"],
+      ENTRADAS: ["Carne de Sol", "Linguiça de Frango e Suina", "Coração de Frango", "Frango Desossado", "Pão de alho"],
       PRINCIPAL: ["Picanha", "Maminha", "Fraldinha", "Alcatra", "Carne de Sol", "Costela Suína", "Lombinho Suíno", "Linguiça de Frango e Suína", "Frango desossado", "Coração de Frango"],
-      GUARNIÇÕES: ["Arroz", "Feijão tropeiro", "Mandioca com manteiga", "Vinagrete", "Pão com alho", "Salada verde"],
-      BEBIDAS: ["Refrigerantes", "Sucos naturais"]
+      GUARNIÇÕES: ["Arroz", "Feijão tropeiro", "Mandioca com manteiga", "Vinagrete", "Pão com alho", "Salada verde", "Farofa de Cuscuz", 'Molho Mel e Mostarda'],
+      BEBIDAS: ["Coca Cola Comum", "Coca Cola Zero Açucar", "Guaraná", "Suco de Caju", "Suco de Abacaxi"]
     }
   },
   crepe: {
@@ -18,7 +18,7 @@ const servicesData = {
     menu: {
       CREPES_DOCE: ["Crepe de frango", "Crepe de camarão", "Crepe Nutella", "Crepe de morango"],
       CREPES_SALGADOS: ["Crepe vegetariano", "Crepe de queijo", "Crepe de chocolate", "Crepe de frutas"],
-      BEBIDAS: ["Refrigerantes", "Sucos naturais"]
+      BEBIDAS: ["Coca Cola Comum", "Coca Cola Zero Açucar", "Guaraná", "Suco de Caju", "Suco de Abacaxi"]
     }
 
   },
@@ -29,7 +29,7 @@ const servicesData = {
     menu: { 
       MASSAS: ["Spaghetti Carbonara", "Penne Arrabbiata", "Lasanha à Bolonhesa", "Ravioli de ricota"],
       ACOMPANHAMENTOS: ["Nhoque ao molho pesto", "Fettuccine Alfredo", "Risotto de camarão", "Salada Caesar"],
-      BEBIDAS: ["Refrigerantes", "Sucos naturais"]
+      BEBIDAS: ["Coca Cola Comum", "Coca Cola Zero Açucar", "Guaraná", "Suco de Caju", "Suco de Abacaxi"]
     }
   },
   jantar: {
@@ -37,10 +37,11 @@ const servicesData = {
     name: "Jantar",
     description: "Menu executivo completo",
     menu: {
-      ENTRADAS: ["Entrada: Bruschetta", "Salmão grelhado", "Filé mignon", "Risotto de funghi", "Legumes salteados", "Batata rústica"],
-      PRATO_PRINCIPAL:  ["Sobremesa: Petit gateau", "Vinho selecionado"],
-      GUARNIÇÕES: ["Arroz branco", "Arroz à grega", "Salada verde", "Legumes na manteiga"],
-      BEBIDAS: ["Refrigerantes", "Sucos naturais"]
+      ENTRADAS: ["SALGADOS ASSADOS", "Folhado de Frango com Abacxi", "Folhado Romeu e Julieta", "Folhado de Bacalhau", "Folhado de Camarão", "SALGADOS FRITOS", "Bombom de Azeitona", "Bombom de Provolone", "Delícia de Queijo", "Dadinho de Tápioca", "Pasteis de Carne e Queijo", "Coxinha de Frango com Catupiry"],
+      EMPRATADOS: ["Camarão com Bechamel de Baroa", "Frango com Bechamel de Baroa", "Escondidinho de Carne Seca", "Escondidinho de Frango"],
+      PRATO_PRINCIPAL: ["File Mignon ao Molho Madeira", "Isca de Frango Recheado ao Molho Branco", "Bacalhau ao Zé do Pipo", "Lagarto ao Molho Madeira"],
+      GUARNIÇÕES: ["Arroz branco", "Arroz com Brócolis", "Batata Rustica", "Salada verde", "Molho de Mostarda e Mel"],
+      BEBIDAS: ["Coca Cola Comum", "Coca Cola Zero Açucar", "Guaraná", "Suco de Caju", "Suco de Abacaxi"]
     }
   },
   almoco: {
@@ -48,10 +49,11 @@ const servicesData = {
     name: "Almoço",
     description: "Buffet livre variado",
     menu:{
-      ENTRADAS: ["Entrada: Bruschetta", "Salmão grelhado", "Filé mignon", "Risotto de funghi", "Legumes salteados", "Batata rústica"],
-      PRATO_PRINCIPAL:  ["Sobremesa: Petit gateau", "Vinho selecionado"],
-      GUARNIÇÕES: ["Arroz branco", "Arroz à grega", "Salada verde", "Legumes na manteiga"],
-      BEBIDAS: ["Refrigerantes", "Sucos naturais"]
+      ENTRADAS: ["SALGADOS ASSADOS", "Folhado de Frango com Abacxi", "Folhado Romeu e Julieta", "Folhado de Bacalhau", "Folhado de Camarão", "SALGADOS FRITOS", "Bombom de Azeitona", "Bombom de Provolone", "Delícia de Queijo", "Dadinho de Tápioca", "Pasteis de Carne e Queijo", "Coxinha de Frango com Catupiry"],
+      EMPRATADOS: ["Camarão com Bechamel de Baroa", "Isca de Frango com Bechamel de Baroa", "Escondidinho de Carne Seca", "Escondidinho de Frango"],
+      PRATO_PRINCIPAL: ["File Mignon ao Molho Madeira", "Frango Recheado ao Molho Branco", "Bacalhau ao Zé do Pipo", "Lagarto ao Molho Madeira"],
+      GUARNIÇÕES: ["Arroz branco", "Arroz com Brócolis", "Batata Rustica", "Salada verde", "Molho de Mostarda e Mel"],
+      BEBIDAS: ["Coca Cola Comum", "Coca Cola Zero Açucar", "Guaraná", "Suco de Caju", "Suco de Abacaxi"]
     }
   },
   coquetel: {
@@ -59,9 +61,9 @@ const servicesData = {
     name: "Coquetel Volante",
     description: "Finger foods e canapés sofisticados",
     menu: {
-      SALGADOS_ASSADOS: ["Canapés de salmão", "Mini sanduíches", "Coxinhas gourmet", "Empadas variadas", "Bruschetta caprese", "Tortinhas doces", "Drinks especiais", "Espumante"],
-      SALGADOS_FRIOS: ["Tábua de frios", "Sushi e sashimi", "Salada de camarão", "Mini wraps", "Canapés vegetarianos", "Mini quiches", "Drinks especiais", "Espumante"],
-      BEBIDAS: ["Drinks especiais", "Espumante"]
+      FINGER_FOODS: ["Canapés de salmão", "Mini sanduíches", "Coxinhas gourmet", "Empadas variadas", "Bruschetta caprese", "Tortinhas doces", "Drinks especiais", "Espumante"],
+      SALGADOS_ASSADOS: ["Folhado de Frango", "Sushi e sashimi", "Salada de camarão", "Mini wraps", "Canapés vegetarianos", "Mini quiches", "Drinks especiais", "Espumante"],
+      BEBIDAS: ["Coca Cola Comum", "Coca Cola Zero Açucar", "Guaraná", "Suco de Caju", "Suco de Abacaxi"]
     }
   },
   boteco: {
@@ -69,10 +71,10 @@ const servicesData = {
     name: "Comida de Boteco",
     description: "Petiscos tradicionais brasileiros",
     menu: {
-      PETISCOS: ["Pastel de queijo", "Coxinha de frango", "Bolinho de bacalhau", "Torresmo crocante", "Linguiça acebolada", "Mandioca frita", "Cerveja gelada", "Caipirinha"],
-      CALDOS: ["Caldo de feijão", "Caldo verde", "Caldo de mandioca com carne seca"],
-      GUARNIÇÕES: ["Arroz Carreteiro", "Feijão tropeiro"],
-      BEBIDAS: ["Cerveja gelada", "Caipirinha"]
+      ILHA_DE_BOTECO: ["Calabresa Acebolada", "Tropeirinho", "Carne de Sol com Mandioca", "Torresmo a Pururuca", "Linguiça acebolada", "Frango a Passarinho", "Pateis de Queijo e Carne", "Kibe com Queijo", "Kibe sem Queijo", "Batata Frita", "Arroz Carreteiro"],
+      CALDOS: ["Caldo de Carne Seca com Abobora", "Caldo de Costela com Mandioca"],
+      EMPRATADOS: ["Isca de Frango com Bechamel de Baroa", "Escondidinho de Carne Seca com Parmesão"],
+      BEBIDAS: ["Coca Cola Comum", "Coca Cola Zero Açucar", "Guaraná", "Suco de Caju", "Suco de Abacaxi"]
     }
   },
   junina: {
@@ -83,7 +85,18 @@ const servicesData = {
       PRATOS_TIPICOS: ["Pamonha doce", "Canjica cremosa", "Milho cozido", "Quentão", "Pé de moleque", "Cocada", "Paçoca caseira", "Vinho quente"],
       CALDOS: ["Caldo verde", "Caldo de mandioca com carne seca"],
       CHURRASQUINHO: ["Espetinho de carne", "Espetinho de frango", "Espetinho de linguiça"],
-      BEBIDAS: ["Quentão", "Vinho quente"]
+      BEBIDAS: ["Coca Cola Comum", "Coca Cola Zero Açucar", "Guaraná", "Suco de Caju", "Suco de Abacaxi"]
+    }
+  },
+  feijoada: {
+    id: "feijoada",
+    name: "Feijoada Mineira ",
+    description: "Feijoada completa com acompanhamentos tradicionais",
+    menu: {
+      ENTRADAS: ["Caldinho de Feijão", "Pastel de Queijo e Carne", "Linguiça Acebolada com Pães"],
+      FEIJOADA: ["Feijoada de Carne Seca", "Feijoada de Costelinha Suina e Lombinho", "Feijoada de Paio e Calabresa"],  
+      GUARNIÇÕES: ["Arroz branco", "Farofa crocante", "Couve refogada", "Laranja fatiada", "Torresmo crocante", "Molho de pimenta"],
+      BEBIDAS: ["Coca Cola Comum", "Coca Cola Zero Açucar", "Guaraná", "Suco de Caju", "Suco de Abacaxi"]
     }
   }
 };
@@ -299,8 +312,8 @@ document.addEventListener('DOMContentLoaded', function() {
       message += `*E-mail:* ${formData.email}\n`;
       message += `*Telefone:* ${formData.telefone}\n`;
       
-      if (formData.dataNascimento) {
-        message += `*Data de Nascimento:* ${formatDate(formData.dataNascimento)}\n`;
+      if (formData.dataEvento) {
+        message += `*Data do Evento:* ${formatDate(formData.dataEvento)}\n`;
       }
       
       if (formData.tipoEvento) {
@@ -416,7 +429,7 @@ document.addEventListener('DOMContentLoaded', function() {
         nome: document.getElementById('nome')?.value || '',
         email: document.getElementById('email')?.value || '',
         telefone: document.getElementById('telefone')?.value || '',
-        dataNascimento: document.getElementById('data-nascimento')?.value || '',
+        dataEvento: document.getElementById('data-evento')?.value || '',
         tipoEvento: document.getElementById('tipo-evento')?.value || '',
         mensagem: document.getElementById('mensagem')?.value || ''
       };
