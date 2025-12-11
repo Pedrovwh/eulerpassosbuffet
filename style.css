@@ -534,10 +534,10 @@ select.form-control {
   font-weight: var(--font-weight-medium);
   font-size: var(--font-size-sm);
 }
-
 .form-group {
   margin-bottom: var(--space-16);
 }
+
 
 /* Card component */
 .card {
@@ -804,8 +804,8 @@ object-fit: contain;
 }
 
 .nav__link {
-  font-family: 'aloevera', sans-serif;
-  font-size: 15px;
+  font-family: "baskerville", serif;
+  font-size: 18px;
   color: var(--color-text);
   text-decoration: none;
   font-weight: var(--font-weight-medium);
@@ -876,7 +876,7 @@ object-fit: contain;
 
 .hero a.btn {
   font-size: var(--font-size-lg);
-  font-family: 'aloevera', sans-serif;
+  font-family: "baskerville", serif;
 }
 
 /* Section Styles */
@@ -904,7 +904,7 @@ object-fit: contain;
 }
 
 .historia__text h2 {
-  font-family: 'aloevera', sans-serif;
+  font-family: "baskerville", serif;
   color: var(--buffet-brown);
   margin-bottom: var(--space-24);
   font-size: var(--font-size-3xl);
@@ -941,7 +941,7 @@ object-fit: contain;
 }
 
 .diferenciais h2 {
-  font-family: 'aloevera', sans-serif;
+  font-family: "baskerville", serif;
   color: var(--buffet-brown);
   margin-bottom: var(--space-32);
   font-size: var(--font-size-3xl);
@@ -974,7 +974,7 @@ object-fit: contain;
 }
 
 .diferencial__card h3 {
-  font-family: 'aloevera', sans-serif;
+  font-family: "baskerville", serif;
   color: var(--buffet-brown);
   margin-bottom: var(--space-16);
   font-size: var(--font-size-xl);
@@ -1000,7 +1000,7 @@ object-fit: contain;
 }
 
 .cardapios h2 {
-  font-family: 'aloevera', sans-serif;
+  font-family: "baskerville", serif;
   color: var(--buffet-brown);
   margin-bottom: var(--space-32);
   font-size: var(--font-size-3xl);
@@ -1014,7 +1014,7 @@ object-fit: contain;
 }
 
 .cardapios button {
-  font-family: 'aloevera', sans-serif;
+  font-family: "baskerville", serif;
 }
 
 .servico__card {
@@ -1040,7 +1040,7 @@ object-fit: contain;
 }
 
 .servico__card h3 {
-  font-family: 'aloevera', sans-serif;
+  font-family: "baskerville", serif;
   color: var(--buffet-brown);
   margin-bottom: var(--space-12);
   font-size: var(--font-size-xl);
@@ -1060,7 +1060,7 @@ object-fit: contain;
 }
 
 .contato h2 {
-  font-family: 'aloevera', sans-serif;
+  font-family: "baskerville", serif;
   color: var(--buffet-brown);
   margin-bottom: var(--space-32);
   font-size: var(--font-size-3xl);
@@ -1083,14 +1083,14 @@ object-fit: contain;
 
 .contato__form h3,
 .contato__info h3 {
-  font-family: 'aloevera', sans-serif;
+  font-family: "baskerville", serif;
   color: var(--buffet-brown);
   margin-bottom: var(--space-24);
   font-size: var(--font-size-2xl);
 }
 
 .contato__form button {
-  font-family: 'aloevera', sans-serif;
+  font-family: "baskerville", serif;
 }
 
 .info-item {
@@ -1121,7 +1121,7 @@ object-fit: contain;
 }
 
 .receitas h2 {
-  font-family: 'aloevera', sans-serif;
+  font-family: "baskerville", serif;
   color: var(--buffet-brown);
   margin-bottom: var(--space-32);
   font-size: var(--font-size-3xl);
@@ -1148,7 +1148,7 @@ object-fit: contain;
 }
 
 .receita__card h3 {
-  font-family: 'aloevera', sans-serif;
+  font-family: "baskerville", serif;
   color: var(--buffet-brown);
   margin: var(--space-16);
   font-size: var(--font-size-xl);
@@ -1166,7 +1166,7 @@ object-fit: contain;
 }
 
 .receita__card a.btn {
-  font-family: 'aloevera', sans-serif;
+  font-family: "baskerville", serif;
   background-color: var(--buffet-gold);
   color: var(--color-white);
   display: block;
@@ -1301,7 +1301,6 @@ object-fit: contain;
   font-weight: 700;
 }
 
-
 #modal-menu details {
   background: #f8f8f800;
   padding: 12px;
@@ -1316,6 +1315,15 @@ object-fit: contain;
   color: var(--buffet-gold);
 }
 
+#modal-menu li {
+  opacity: 0;
+  transform: translateY(5px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+#modal-menu li.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 .cardapio-detalhes h3,
 .orcamento-form h3 {
@@ -1459,4 +1467,87 @@ html {
 /* Section padding adjustment for fixed header */
 section {
   scroll-margin-top: 100px;
+}/* Multi-select customizado */
+.custom-multiselect {
+  position: relative;
+  min-width: 220px;
+  margin-bottom: 12px;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  min-height: 32px;
+  margin-bottom: 4px;
+}
+
+.tag-selected {
+  background: var(--color-primary, #21808d);
+  color: #fff;
+  border-radius: 12px;
+  padding: 2px 8px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  margin-right: 2px;
+}
+
+.remove-tag {
+  background: none;
+  border: none;
+  color: #fff;
+  margin-left: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.dropdown-btn {
+  width: 100%;
+  text-align: left;
+  background: #ffffff25;
+  border: 1px solid var(--color-border, #ccc);
+  border-radius: 8px;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: border-color 0.2s;
+  color: white;
+}
+
+.dropdown-btn:focus {
+  outline: var(--focus-outline, 2px solid #21808d);
+  border-color: var(--color-primary, #21808d);
+}
+
+.dropdown-list {
+  position: absolute;
+  z-index: 10;
+  background: #121312fa;
+  border: 1px solid var(--color-border, #ccc);
+  border-radius: 8px;
+  width: 100%;
+  max-height: 180px;
+  overflow-y: auto;
+  margin-top: 2px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  padding: 0;
+  list-style: none;
+}
+
+.dropdown-list.hidden {
+  display: none;
+}
+
+.dropdown-list li {
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.dropdown-list li:hover,
+.dropdown-list li:focus {
+  background: var(--color-secondary, #1a0c0c0e);
+  outline: none;
 }
