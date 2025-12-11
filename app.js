@@ -55,9 +55,9 @@ const servicesData = {
       BEBIDAS: ["Coca Cola Comum", "Coca Cola Zero Açucar", "Guaraná", "Suco de Caju", "Suco de Abacaxi"]
     },
     selectFields: [
-      { id: "Prato_principal", label: "Escolha o Prato Principal", options: ["File Mignon ao Molho Madeira", "Isca de Frango Recheado ao Molho Branco", "Bacalhau ao Zé do Pipo", "Lagarto ao Molho Madeira"] },
-      { id: "Massas", label: "Escolha a Massa", options: ["Penne ao Molho Sugo", "Espaguete ao Molho Bolonhesa", "Rodele de Ricota e Tomate Seco ao Quatro Queijos"] },
-      { id: "Empratados", label: "Escolha o Empratado", options: ["Camarão com Bechamel de Baroa", "Frango com Bechamel de Baroa", "Escondidinho de Carne Seca", "Escondidinho de Frango"] }
+      { id: "Prato_principal", label: "Escolha 2 Opções de Prato Principal", options: ["File Mignon ao Molho Madeira", "Isca de Frango Recheado ao Molho Branco", "Bacalhau ao Zé do Pipo", "Lagarto ao Molho Madeira"] },
+      { id: "Massas", label: "Escolha  1 Opção de Massa", options: ["Penne ao Molho Sugo", "Espaguete ao Molho Bolonhesa", "Rodele de Ricota e Tomate Seco ao Quatro Queijos"] },
+      { id: "Empratados", label: "Escolha 2 Opções de Empratado", options: ["Camarão com Bechamel de Baroa", "Frango com Bechamel de Baroa", "Escondidinho de Carne Seca", "Escondidinho de Frango"] }
     ]
   },
   almoco: {
@@ -73,9 +73,9 @@ const servicesData = {
       BEBIDAS: ["Coca Cola Comum", "Coca Cola Zero Açucar", "Guaraná", "Suco de Caju", "Suco de Abacaxi"]
     },
     selectFields: [
-      { id: "PRATO_PRINCIPAL", label: "Escolha o Prato Principal", options: ["File Mignon ao Molho Madeira", "Isca de Frango Recheado ao Molho Branco", "Bacalhau ao Zé do Pipo", "Lagarto ao Molho Madeira"] },
-      { id: "Massas", label: "Escolha a Massa", options: ["Penne ao Molho Sugo", "Espaguete ao Molho Bolonhesa", "Rodele de Ricota e Tomate Seco ao Quatro Queijos"] },
-      { id: "Empratados", label: "Escolha o Empratado", options: ["Camarão com Bechamel de Baroa", "Frango com Bechamel de Baroa", "Escondidinho de Carne Seca", "Escondidinho de Frango"] }
+      { id: "Prato_Principal", label: "Escolha 2 Opções de Prato Principal", options: ["File Mignon ao Molho Madeira", "Isca de Frango Recheado ao Molho Branco", "Bacalhau ao Zé do Pipo", "Lagarto ao Molho Madeira"] },
+      { id: "Massas", label: "Escolha  1 Opção de Massa", options: ["Penne ao Molho Sugo", "Espaguete ao Molho Bolonhesa", "Rodele de Ricota e Tomate Seco ao Quatro Queijos"] },
+      { id: "Empratados", label: "Escolha 2 Opções de Empratado", options: ["Camarão com Bechamel de Baroa", "Frango com Bechamel de Baroa", "Escondidinho de Carne Seca", "Escondidinho de Frango"] }
     ]
   },
   coquetel: {
