@@ -331,19 +331,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  margin: 0;
-  font-weight: var(--font-weight-semibold);
-  line-height: var(--line-height-tight);
-  color: var(--color-text);
-  letter-spacing: var(--letter-spacing-tight);
-}
-
-h1 {
-  font-size: var(--font-size-4xl);
-}
-h2 {
-  font-size: var(--font-size-3xl);
+/* Removido código solto e conflito de background */
+h2 {  font-size: var(--font-size-3xl);
 }
 h3 {
   font-size: var(--font-size-2xl);
@@ -1468,6 +1457,22 @@ html {
 section {
   scroll-margin-top: 100px;
 }/* Multi-select customizado */
+
+.dropdown-btn {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: var(--font-size-md);
+  text-align: left;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-base);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-text);
+}
+
 .custom-multiselect {
   position: relative;
   min-width: 220px;
@@ -1503,28 +1508,10 @@ section {
   line-height: 1;
 }
 
-.dropdown-btn {
-  width: 100%;
-  text-align: left;
-  background: #ffffff25;
-  border: 1px solid var(--color-border, #ccc);
-  border-radius: 8px;
-  padding: 8px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: border-color 0.2s;
-  color: white;
-}
-
-.dropdown-btn:focus {
-  outline: var(--focus-outline, 2px solid #21808d);
-  border-color: var(--color-primary, #21808d);
-}
-
 .dropdown-list {
   position: absolute;
   z-index: 10;
-  background: #121312fa;
+  background: var(--dropdown-bg, #fff);
   border: 1px solid var(--color-border, #ccc);
   border-radius: 8px;
   width: 100%;
@@ -1534,6 +1521,23 @@ section {
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   padding: 0;
   list-style: none;
+}
+
+/* Modo claro: fundo branco */
+:root {
+  --dropdown-bg: #fff;
+}
+
+/* Modo escuro via media query */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --dropdown-bg: #23272a;
+  }
+}
+
+/* Modo escuro via data-color-scheme */
+[data-color-scheme="dark"] {
+  --dropdown-bg: #23272a;
 }
 
 .dropdown-list.hidden {
