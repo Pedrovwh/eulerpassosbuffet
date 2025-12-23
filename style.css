@@ -1353,6 +1353,49 @@ object-fit: contain;
   border-color: var(--buffet-gold-light);
 }
 
+.redes-sociais {
+    margin-top: 1rem;
+}
+
+.redes-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+    justify-content: center;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+  
+.instagram {
+content: url("imagens/instagram-dark.svg");
+}
+
+.linkedin {
+  content: url("imagens/linkedin-dark.svg");
+}
+
+/* Tema escuro */
+@media (prefers-color-scheme: dark) {
+  .instagram {
+      content: url("imagens/instagram-light.svg");
+  }
+
+  .linkedin {
+      content: url("imagens/linkedin-light.svg");
+  }
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .nav__menu {
